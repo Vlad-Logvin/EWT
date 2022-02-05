@@ -1,0 +1,2 @@
+ErrorDocument 404 /lab1/not-found.html
+ErrorDocument 403 /lab1/forbidden.html
