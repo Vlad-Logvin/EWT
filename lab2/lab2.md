@@ -34,3 +34,5 @@
 
 5. Ссылка на figma:
 https://www.figma.com/file/bPLbeZ6kCc2RTnl0mY1O0Y/Untitled?node-id=0%3A1
+
+[AviaTrades](AviaTrades.pdf) в PDF
