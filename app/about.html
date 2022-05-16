@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta charset="utf-8" />
+    <title>Салон Видеопроката</title>
+    <link rel="stylesheet" href="assets/css/style-starter.css" />
+  </head>
+
+  <body>
+    <header id="site-header" class="w3l-header fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
+        <div class="container">
+          <h1>
+            <a class="navbar-brand" href="index.html"
+              ><span class="fa fa-play icon-log" aria-hidden="true"></span>
+              Салон Видеопроката
+            </a>
+          </h1>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="fa icon-expand fa-bars"></span>
+            <span class="fa icon-close fa-times"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Домой</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="genre.html">Видеопрокат</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Напишите нам</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="w3l-breadcrumbs"></div>
+    <section class="w3l-team grids-main py-5 container py-lg-4" id="team">
+      <div class="headerhny-title">
+        <h3 class="hny-title">Наши владельцы</h3>
+      </div>
+      <div class="box16">
+        <div class="d-grid team-info">
+          <div class="column position-relative">
+            <a href="https://vk.com/vladlogvin"
+              ><img
+                src="assets/images/a.jpg"
+                alt=""
+                class="img-fluid rounded team-image"
+            /></a>
+          </div>
+          <div class="column text-center">
+            <h3 class="name-pos">
+              <a href="https://vk.com/vladlogvin">Влад Логвин</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="w3l-footer">
+      <section class="footer-inner-main">
+        <div class="container py-lg-4 row footer-links">
+          <div class="col-md-6 sub-two-right mt-5">
+            <h6>Меню</h6>
+            <ul>
+              <li><a href="genre.html">Видеопрокат</a></li>
+              <li><a href="contact.html">Напишите нам</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 sub-two-right mt-5">
+            <h6>Отправка новостей</h6>
+            <form action="#" class="subscribe mb-3" method="post">
+              <input
+                type="email"
+                name="email"
+                placeholder="Введите ваш email"
+                required=""
+              />
+              <button type="button">
+                <span class="fa fa-envelope-o"></span>
+              </button>
+            </form>
+            <p>
+              Введите ваш Email, чтобы получать новости и обновления по салону
+              видеопроката
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<!-- Template JavaScript -->
+<!--/theme-change-->
+<script src="assets/js/theme-change.js"></script>
+<!-- //theme-change-->
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $(".navbar-toggler").click(function () {
+      $("body").toggleClass("noscroll");
+    });
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
+<!--/MENU-JS-->
+<script>
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 80) {
+      $("#site-header").addClass("nav-fixed");
+    } else {
+      $("#site-header").removeClass("nav-fixed");
+    }
+  });
+
+  //Main navigation Active Class Add Remove
+  $(".navbar-toggler").on("click", function () {
+    $("header").toggleClass("active");
+  });
+  $(document).on("ready", function () {
+    if ($(window).width() > 991) {
+      $("header").removeClass("active");
+    }
+    $(window).on("resize", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+    });
+  });
+</script>
+<!--//MENU-JS-->
+<script src="assets/js/bootstrap.min.js"></script>
